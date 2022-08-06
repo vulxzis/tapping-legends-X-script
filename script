@@ -1,0 +1,413 @@
+if game.PlaceId == 8750997647 then
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "Feet hub - Tapping Legends X", HidePremium = false, IntroText = "Feet hub", SaveConfig = true, ConfigFolder = "Test hub"})
+    
+    
+    --Values--
+    _G.AutoClick = false
+    _G.AutoRebirth = false
+    _G.selectRebirth = "1"
+    _G.autoHatch = false
+    _G.selectEgg = "Basic Egg"
+    _G.AutoEquipbest = false
+    _G.Autoclaimdaily = false
+    _G.autoUpgradeTap = false
+    _G.autoupgradeRebirth = false
+    --functions--
+    
+    function AutoClick()
+        while _G.AutoClick == true do
+            game:GetService("ReplicatedStorage").Remotes.Tap:FireServer()
+            wait(.000000000000000000000000000000000001)
+         end
+        end
+    
+    function AutoRebirth()
+        while _G.AutoRebirth == true do
+            game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(_G.selectRebirth)
+            wait(.00000000000000000000000000000000000)
+    end
+end
+    
+    function autoHatch()
+        while _G.autoHatch == true do  
+   game:GetService("ReplicatedStorage").Remotes.BuyEgg:InvokeServer(_G.selectEgg,3)
+           wait(.000000000000000000000000000000000001)
+        end
+    end
+        
+    function Equipbest()
+        while _G.AutoEquipbest == true do
+                game:GetService("ReplicatedStorage").Remotes.UnequipAll:InvokeServer() 
+                 game:GetService("ReplicatedStorage").Remotes.EquipBest:InvokeServer()
+               
+        wait(30)
+        end
+    end
+
+    function Autoclaimdaily()
+        while _G.Autoclaimdaily == true do
+            game:GetService("ReplicatedStorage").Remotes.PlaytimeReward:FireServer(1)
+            game:GetService("ReplicatedStorage").Remotes.PlaytimeReward:FireServer(2)
+            game:GetService("ReplicatedStorage").Remotes.PlaytimeReward:FireServer(3)
+            game:GetService("ReplicatedStorage").Remotes.PlaytimeReward:FireServer(4)
+            game:GetService("ReplicatedStorage").Remotes.PlaytimeReward:FireServer(5)
+            game:GetService("ReplicatedStorage").Remotes.PlaytimeReward:FireServer(6)
+            game:GetService("ReplicatedStorage").Remotes.PlaytimeReward:FireServer(7)
+            game:GetService("ReplicatedStorage").Remotes.PlaytimeReward:FireServer(8)
+            game:GetService("ReplicatedStorage").Remotes.PlaytimeReward:FireServer(9)
+        wait(10)
+        end
+    end
+    function teleport1()
+        game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(1)
+        wait(.0001)
+        end
+    
+    function teleport2()
+    game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(2)
+    wait(.0001)
+    end
+    function teleport2()
+        game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(2)
+        wait(.0001)
+        end
+    function teleport3()
+            game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(3)
+            wait(.0001)
+            end
+    function teleport4()
+                game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(4)
+                wait(.0001)
+                end
+    function teleport5()
+     game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(5)
+                    wait(.0001)
+    end
+    function teleport6()
+    game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(6)
+                    wait(.0001)
+    end
+    function teleport7()
+        game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(7)
+                        wait(.0001)
+    end
+    function teleport8()
+        game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(8)
+                        wait(.0001)
+        end
+        function teleport9()
+            game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(9)
+                            wait(.0001)
+            end  
+        function teleport10()
+            game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(10)
+                            wait(.0001)
+                end 
+    function teleport11()
+            game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(11)
+                             wait(.0001)
+                end   
+    function teleport12()
+            game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(12)
+                             wait(.0001)
+                 end    
+    function teleport13()
+            game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(13)
+                            wait(.0001)
+                    end 
+    function teleport14()
+             game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(14)
+                            wait(.0001)
+    end
+     function teleport15()
+              game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(15)
+                              wait(.0001)
+                                end                                             
+    function teleport16()
+     game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(16)
+                   wait(.0001)
+                   end     
+     function teleport17()
+    game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(17)
+                    wait(.0001)
+                     end 
+    function teleportupgrade()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-106.129517, 148.161957, -654.234009, -0.994518042, 0, -0.104565002, 0, 1, 0, 0.104565002, 0, -0.994518042)
+        wait(.0001)
+         end 
+    function teleportextractor()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-103.15332, 152.256134, -724.847351, -0.0522800684, 0, 0.998632431, 0, 1, 0, -0.998632431, 0, -0.0522800684)
+        wait(.0001)
+    end
+    function teleportTapSkin()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-202.767807, 152.543167, -721.915222, 0.956320226, -0, -0.292321175, 0, 1, -0, 0.292321175, 0, 0.956320226)
+        wait(.0001)
+    end
+        function autoupgradeTap()
+            while _G.autoUpgradeTap == true do
+            game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer("Ruby","TapMultiplier")
+            wait(.000000000000000000000000000000000001)
+         end
+        end
+    function autoupgraderebirth()
+        while _G.autoupgradeRebirth == true do
+            game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer("Ruby","RebirthsUpgrade")
+            wait(.000000000000000000000000000000000001)
+         end
+        end
+    --Tabs--
+    local FarmTab = Window:MakeTab({
+        Name = "AutoFarm",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local EggsTab = Window:MakeTab({
+        Name = "Eggs",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+        
+    })
+    local MiscTab = Window:MakeTab({
+        Name = "Misc",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local TeleportTab = Window:MakeTab({
+        Name = "Teleports",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    --Toggles--
+    FarmTab:AddToggle({
+        Name = "AutoClick",
+        Default = false,
+        Callback = function(Value)
+            _G.AutoClick = Value
+            AutoClick()
+        end    
+    })
+    
+    
+    FarmTab:AddToggle({
+        Name = "AutoRebirth",
+        Default = false,
+        Callback = function(Value)
+            _G.AutoRebirth = Value
+            AutoRebirth()
+        end    
+    })
+    
+    EggsTab:AddToggle({
+        Name = "Open Eggs",
+        Default = false,
+        Callback = function(Value)
+            _G.autoHatch = Value
+            autoHatch()
+        end    
+    })
+    
+
+MiscTab:AddToggle({
+	Name = "Re equip team",
+	Default = false,
+	Callback = function(Value)
+        _G.AutoEquipbest = Value
+	  Equipbest()
+	end    
+})
+
+
+MiscTab:AddToggle({
+	Name = "Auto claim daily",
+	Default = false,
+	Callback = function(Value)
+        _G.Autoclaimdaily = Value
+	  Autoclaimdaily()
+	
+    end    
+})
+
+MiscTab:AddToggle({
+	Name = "auto upgrade taps",
+	Default = false,
+	Callback = function(Value)
+        _G.autoUpgradeTap = Value
+	  autoupgradeTap()
+	
+    end    
+})
+MiscTab:AddToggle({
+	Name = "auto upgrade Rebirths",
+	Default = false,
+	Callback = function(Value)
+        _G.autoupgradeRebirth= Value
+	  autoupgraderebirth()
+	
+    end    
+})
+--buttons--
+TeleportTab:AddButton({
+	Name = "Spawn",
+	Callback = function()
+      	teleport1()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Forest",
+	Callback = function()
+      	teleport2()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Desert",
+	Callback = function()
+      	teleport3()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Winter",
+	Callback = function()
+      	teleport4()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Lava",
+	Callback = function()
+      	teleport5()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Aqua",
+	Callback = function()
+      	teleport6()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Sakura",
+	Callback = function()
+      	teleport7()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Mine",
+	Callback = function()
+      	teleport8()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Galaxy",
+	Callback = function()
+      	teleport9()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Heaven",
+	Callback = function()
+      	teleport10()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Hell",
+	Callback = function()
+      	teleport11()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Tech",
+	Callback = function()
+      	teleport12()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "SteamPunk",
+	Callback = function()
+      	teleport13()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Swamp",
+	Callback = function()
+      	teleport14()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Candy",
+	Callback = function()
+      	teleport15()
+  	end    
+})
+
+TeleportTab:AddButton({
+	Name = "Magic",
+	Callback = function()
+      	teleport16(16)
+  	end    
+})
+
+TeleportTab:AddButton({
+	Name = "Event",
+	Callback = function()
+      	teleport17()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Upgrades",
+	Callback = function()
+      	teleportupgrade()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "Extractors",
+	Callback = function()
+      	teleportextractor()
+  	end    
+})
+TeleportTab:AddButton({
+	Name = "TapSkips",
+	Callback = function()
+      	teleportTapSkin()
+  	end    
+})
+    --dropdown-
+    
+    
+    EggsTab:AddDropdown({
+        Name = "Select Egg",
+        Default = "Basic Egg",
+        Options = {"Basic Egg", "Rare Egg", "Forest Egg", "Desert Egg", "Winter Egg", "Lava Egg", "Aqua Egg", "Sakura Egg", "Mine Egg", "Galaxy Egg", "Heaven Egg", "Hell Egg", "Tech Egg", "SteamPunk Egg", "Swamp Egg", "Candy Egg",},
+        Callback = function(Value)
+            _G.selectEgg = Value
+            
+        end    
+    })
+    
+    FarmTab:AddDropdown({
+        Name = "Select Rebirth",
+        Default = "1",
+    Options = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40",},
+        Callback = function(Value)
+            _G.selectRebirth = Value
+            
+        end    
+    })
+    
+    
+    OrionLib:MakeNotification({
+        Name = "Feet Hub",
+        Content = "This is feet Hub this doesnt have anti afk also this is my first script",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+    OrionLib:MakeNotification({
+        Name = "Feet Hub",
+        Content = "FOR OPEN EGG TO WORK YOU MUST BE NEXT EGG TO IT ACTUALLY OPEN IT",
+        Image = "rbxassetid://4483345998",
+        Time = 15
+    })
+    
+    
+    
+    end
+    OrionLib:Init()
